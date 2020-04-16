@@ -22,7 +22,7 @@ public class InvoiceGeneratorTest {
     }
 
     @Test
-    public void givenMultipleRides_ShouldReturnFare() {
+    public void givenMultipleRides_ShouldReturnSummary() {
         Ride[] rides = {new Ride(2.0, 5),
                         new Ride(0.1, 1)
         };
@@ -30,5 +30,6 @@ public class InvoiceGeneratorTest {
         InvoiceSummary expectedSummary = new InvoiceSummary(2,30.0);
         Assert.assertEquals(expectedSummary, summary);
     }
+
 
 }
